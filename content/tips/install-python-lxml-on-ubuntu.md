@@ -5,6 +5,8 @@ Category: Tips
 Tags: install, lxml, python, ubuntu
 Slug: install-python-lxml-on-ubuntu
 
+Here are the packages you need to install
+
 ``` {.default .prettyprint .prettyprinted}
 sudo apt-get install libxml2
 sudo apt-get install libxslt1.1
