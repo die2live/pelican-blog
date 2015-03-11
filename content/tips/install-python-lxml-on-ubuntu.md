@@ -7,7 +7,7 @@ Slug: install-python-lxml-on-ubuntu
 
 Here are the packages you need to install
 
-``` {.default .prettyprint .prettyprinted}
+```
 sudo apt-get install libxml2
 sudo apt-get install libxslt1.1
 sudo apt-get install libxml2-dev
@@ -30,7 +30,7 @@ For reasons unknown to me, the compilation on Python2 does not find
 Cython. To be more precise and absolutely explicit about this matter,
 both commands below DO NOT employ Cython:
 
-``` {.default .prettyprint .prettyprinted}
+```
 # DO NOT use these commands. I repeat: DO NOT use these commands.
 $ pip-2.7 install lxml
 $ easy_install-2.7 install lxml
@@ -39,7 +39,7 @@ $ easy_install-2.7 install lxml
 So, when using Python2 you have only one alternative, as far as I know,
 which is: compile from sources, Luke!
 
-``` {.default .prettyprint .prettyprinted}
+```
 # install build environment and dependencies
 $ kernel_release=$( uname -r )
 $ sudo apt-get install linux-headers-${kernel_release} build-essential -y
