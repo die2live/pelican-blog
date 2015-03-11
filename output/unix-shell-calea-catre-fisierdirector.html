@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Unix Shell - Calea către fişier/director</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">W-Me Blog </a></h1>
+                <nav><ul>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li><a href="/category/tips.html">Tips</a></li>
+                    <li class="active"><a href="/category/unix.html">Unix</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/unix-shell-calea-catre-fisierdirector.html" rel="bookmark"
+           title="Permalink to Unix Shell - Calea către fişier/director">Unix Shell - Calea către fişier/director</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-02-13T14:10:00+01:00">
+                Published: Thu 13 February 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/unix.html">Unix</a>. </p>
+
+</footer><!-- /.post-info -->      <p>Sistemul de fişiere în sistemele de operare de tip *nix au formă de
+arbore. Astfel este un director de cel mai înalt nivel, care se numeşte
+root (rădăcină), din care se pornesc multe alte ramuri, cum ar fi bin,
+usr, temp, src, var, etc, şi altele, fiecare cu subramurile lor.</p>
+<p><img alt="" src="http://www.openbookproject.net/tutorials/getdown/unix/images/lesson2/UnixDirectoryTree.png" /></p>
+<p>Pentru a indica unde se află un director sau fişier în sistemul de
+fişiere al computerului este necesar să ştim calea spre acest
+director/fişier. Astfel calea este adresa spre o resursă de pe discul
+local sau din reţea. Deosebim 2 tipuri de căi: cale completă şi cale
+relativă.<br />
+<strong>NB:</strong> <em>Pentru toate exemplele din acest articol se va folosi ierarhia
+de fişiere din imagine şi se presupune că directorul curent este
+/users/john</em><br />
+<strong>Calea completă</strong> se indică de la rădăcina sistemului de fişiere, până
+la fişierul/directorul dorit. Astfel, calea completă spre directorul
+curent este <em>/users/john</em>, iar calea spre directorul "work" din
+directorul curent este <em>/users/john/work</em>.<br />
+<strong>Calea relativă</strong> se indică pornind de la directorul curent. Astfel,
+calea relativă spre directorul "work" din directorul curent este <em>work</em>.
+De asemenea, am putea folosi şi construcţia <em>./work</em>, în care punctul
+(.) indică directorul curent.<br />
+Un al exemplu ar fi calea relativă spre directorul
+"carol" - <em>./../carol</em> (din directorul curent ne ridicăm cu un nivel mai
+sus, iar de acolo in jos, spre "carol").</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.twitter.com/die2live">Twitter</a></li>
+                            <li><a href="https://github.com/die2live">GitHub</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

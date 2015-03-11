@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>W-Me Blog - install</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">W-Me Blog </a></h1>
+                <nav><ul>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li><a href="/category/tips.html">Tips</a></li>
+                    <li><a href="/category/unix.html">Unix</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/install-python-lxml-on-ubuntu.html">Install python lxml on Ubuntu</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2014-07-21T09:12:00+02:00">
+                Published: Mon 21 July 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/install.html">install</a> <a href="/tag/lxml.html">lxml</a> <a href="/tag/python.html">python</a> <a href="/tag/ubuntu.html">ubuntu</a> </p>
+</footer><!-- /.post-info --><p>``` {.default .prettyprint .prettyprinted}
+sudo apt-get install libxml2
+sudo apt-get install libxslt1.1
+sudo apt-get install libxml2-dev
+sudo apt-get install libxslt1-dev
+sudo apt-get install python-libxml2
+sudo apt-get install python-libxslt1
+sudo apt-get install python-dev
+sudo apt-get install python-setuptools
+sudo apt-get install cython
+sudo apt-get install zlib1g-dev</p>
+<div class="highlight"><pre>The hypothesis is that `pip install lxml` should work in every
+environment, regardless if you are using Python2 or Python3.
+
+There&#39;s also `Cython` to be considered: You will certainly
+enjoy `lxml` compiled with `Cython` due to relevant performance gains.
+
+For reasons unknown to me, the compilation on Python2 does not find
+Cython. To be more precise and absolutely explicit about this matter,
+both commands below DO NOT employ Cython:
+
+``` {.default .prettyprint .prettyprinted}
+# DO NOT use these commands. I repeat: DO NOT use these commands.
+$ pip-2.7 install lxml
+$ easy_install-2.7 install lxml
+</pre></div>
+
+
+<p>So, when using Python2 you have only one alternative, as far as I know,
+which is: compile from sources, Luke!</p>
+<p>``` {.default .prettyprint .prettyprinted}</p>
+<h1>install build environment and dependencies</h1>
+<p>$ kernel_release=$( uname -r )
+$ sudo apt-get install linux-headers-${kernel_release} build-essential -y
+$ sudo apt-get install libxml2-dev libxslt1-dev -y</p>
+<h1>Download from github and compile from sources</h1>
+<p>$ git clone --branch lxml-3.2.4 https://github.com/lxml/lxml
+$ python2.7 setup.py clean build --with-cython install
+```</p>
+<p><strong>Sources:</strong>  </p>
+<p>http://stackoverflow.com/questions/16149613/installing-lxml-with-pip-in-virtualenv-ubuntu-12-10-error-command-gcc-failed  </p>
+<p>http://stackoverflow.com/questions/22239816/installing-lxml-in-virtualenv-via-pip-install-error-command-x86-64-linux-gnu-g</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/installing-python-packages-in-nitrous-io.html" rel="bookmark"
+                           title="Permalink to Installing python packages in nitrous.io">Installing python packages in nitrous.io</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-02-28T11:34:00+01:00">
+                Published: Fri 28 February 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/install.html">install</a> <a href="/tag/nitrousio.html">nitrous.io</a> <a href="/tag/pip.html">pip</a> <a href="/tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->                <p><code>pip install --user praw</code></p>
+<p>http://www.pip-installer.org/en/latest/cookbook.html#user-installs</p>
+                <a class="readmore" href="/installing-python-packages-in-nitrous-io.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.twitter.com/die2live">Twitter</a></li>
+                            <li><a href="https://github.com/die2live">GitHub</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

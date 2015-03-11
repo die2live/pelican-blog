@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Python 3 on Cloud 9 IDE</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">W-Me Blog </a></h1>
+                <nav><ul>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li class="active"><a href="/category/tips.html">Tips</a></li>
+                    <li><a href="/category/unix.html">Unix</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/python-3-on-cloud-9-ide.html" rel="bookmark"
+           title="Permalink to Python 3 on Cloud 9 IDE">Python 3 on Cloud 9 IDE</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-06-06T10:58:00+02:00">
+                Published: Fri 06 June 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+
+</footer><!-- /.post-info -->      <p>The only official way to do it right now is:</p>
+<p>``` {style="color: #333333;"}
+tmux
+c9pm install python3-3.3.1
+c9pm install gcc-wrapper-4.6.3</p>
+<p>pyvenv-3.3 virtualenv</p>
+<div class="highlight"><pre><span class="err">```</span> <span class="p">{</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;color: #333333;&quot;</span><span class="p">}</span>
+<span class="nt">cd</span> <span class="nt">virtualenv</span> <span class="o">&amp;&amp;</span> <span class="nt">source</span> <span class="o">./</span><span class="nt">bin</span><span class="o">/</span><span class="nt">activate</span>
+</pre></div>
+
+
+<p>``` {style="color: #333333;"}
+curl -O http://python-distribute.org/distribute_setup.py
+python distribute_setup.py</p>
+<div class="highlight"><pre><span class="err">```</span> <span class="p">{</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;color: #333333;&quot;</span><span class="p">}</span>
+<span class="nt">export</span> <span class="nt">LD_LIBRARY_PATH</span><span class="o">=$(</span><span class="nt">gcc</span> <span class="nt">--print-file-name</span><span class="o">=</span><span class="nt">libgcc_s</span><span class="nc">.so.1</span> <span class="o">|</span> <span class="nt">cut</span> <span class="nt">-d</span><span class="s1">&#39;/&#39;</span> <span class="nt">-f1-5</span><span class="o">):$</span><span class="nt">LD_LIBRARY_PATH</span>
+</pre></div>
+
+
+<p><code>{style="color: #333333;"}
+curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+python get-pip.py</code></p>
+<p>Enjoy!</p>
+<p>[http://support.cloud9ide.com/entries/22898053-Python-3-support]</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.twitter.com/die2live">Twitter</a></li>
+                            <li><a href="https://github.com/die2live">GitHub</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

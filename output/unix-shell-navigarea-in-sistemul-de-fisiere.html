@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Unix Shell - Navigarea în sistemul de fişiere</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">W-Me Blog </a></h1>
+                <nav><ul>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li><a href="/category/tips.html">Tips</a></li>
+                    <li class="active"><a href="/category/unix.html">Unix</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/unix-shell-navigarea-in-sistemul-de-fisiere.html" rel="bookmark"
+           title="Permalink to Unix Shell - Navigarea în sistemul de fişiere">Unix Shell - Navigarea în sistemul de fişiere</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-02-12T13:31:00+01:00">
+                Published: Wed 12 February 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/unix.html">Unix</a>. </p>
+
+</footer><!-- /.post-info -->      <p>Sistemul de fişiere în sistemele de operare de tip *unix au formă de
+arbore. Astfel este un director de cel mai înalt nivel, care se numeşte
+root (rădăcină), din care se pornesc multe alte ramuri, cum ar fi bin,
+usr, temp, src, var, etc, şi altele, fiecare cu subramurile lor.</p>
+<p><img alt="" src="http://www.december.com/unix/tutor/tree1.gif" /></p>
+<p>Când ne aflăm în mediul shell, întotdeauna putem vedea în care director
+din ierarhie ne aflăm. Aceasta este arătată chiar înainte de semnul \$
+şi prompter. În următoarea imagine putem vedea că ne aflăm la cel mai
+înalt nivel, adică în root (directorul root se indică cu un slash <code>/</code> ).</p>
+<p><img alt="" src="http://content.screencast.com/users/die2live/folders/Jing/media/6bce8f76-a2e4-46d1-8885-bf58bc4a058a/root%20slash.png" /></p>
+<p>Există şi alte caractere speciale pentru indicarea unui anumit director
+din sistem. De exemplu, tilda (<em>\~</em>) indică la directorul <em>home</em> al
+utilizatorului curent.<br />
+Pentru a schimba directorul curent folosim
+comanda <code>cd &lt;directory_path&gt;</code> (change directory),
+unde <em>\&lt;directory_path></em> este calea spre directorul dorit.</p>
+<p><img alt="" src="http://content.screencast.com/users/die2live/folders/Jing/media/b885a70c-c9ac-43aa-8aa0-b9e3cd39cbe4/cd%20tilde.png" /></p>
+<p>Aici am folosit <code>cd ~</code> care a schimbat directorul curent să fie home.
+Putem vedea calea deplină la directorul curent folosind
+comanda <em>pwd</em> (present working directory).</p>
+<p><img alt="" src="http://content.screencast.com/users/die2live/folders/Jing/media/f9c9cf57-12fd-4925-86e5-3b00413a09e9/pwd%20home.png" /></p>
+<p>Vedem că ne aflăm în directorul /home/dai. Astfel am fi putut ajunge
+aici accesând comanda <code>cd /home/dai</code></p>
+<p><img alt="" src="http://content.screencast.com/users/die2live/folders/Jing/media/dd1379ec-fe4e-432c-bb56-1239dab2b74e/cd%20home_dai.png" /></p>
+<p>Pentru a ne deplasa cu un nivel mai sus, folosim comanda <code>cd ..</code></p>
+<p><img alt="" src="http://content.screencast.com/users/die2live/folders/Jing/media/c8369679-f3f2-434f-a8c5-f36914910361/cd%20back.png" /></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.twitter.com/die2live">Twitter</a></li>
+                            <li><a href="https://github.com/die2live">GitHub</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

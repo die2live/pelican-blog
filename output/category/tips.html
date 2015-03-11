@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>W-Me Blog - Tips</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">W-Me Blog </a></h1>
+                <nav><ul>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li class="active"><a href="/category/tips.html">Tips</a></li>
+                    <li><a href="/category/unix.html">Unix</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/install-python-lxml-on-ubuntu.html">Install python lxml on Ubuntu</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2014-07-21T09:12:00+02:00">
+                Published: Mon 21 July 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/install.html">install</a> <a href="/tag/lxml.html">lxml</a> <a href="/tag/python.html">python</a> <a href="/tag/ubuntu.html">ubuntu</a> </p>
+</footer><!-- /.post-info --><p>``` {.default .prettyprint .prettyprinted}
+sudo apt-get install libxml2
+sudo apt-get install libxslt1.1
+sudo apt-get install libxml2-dev
+sudo apt-get install libxslt1-dev
+sudo apt-get install python-libxml2
+sudo apt-get install python-libxslt1
+sudo apt-get install python-dev
+sudo apt-get install python-setuptools
+sudo apt-get install cython
+sudo apt-get install zlib1g-dev</p>
+<div class="highlight"><pre>The hypothesis is that `pip install lxml` should work in every
+environment, regardless if you are using Python2 or Python3.
+
+There&#39;s also `Cython` to be considered: You will certainly
+enjoy `lxml` compiled with `Cython` due to relevant performance gains.
+
+For reasons unknown to me, the compilation on Python2 does not find
+Cython. To be more precise and absolutely explicit about this matter,
+both commands below DO NOT employ Cython:
+
+``` {.default .prettyprint .prettyprinted}
+# DO NOT use these commands. I repeat: DO NOT use these commands.
+$ pip-2.7 install lxml
+$ easy_install-2.7 install lxml
+</pre></div>
+
+
+<p>So, when using Python2 you have only one alternative, as far as I know,
+which is: compile from sources, Luke!</p>
+<p>``` {.default .prettyprint .prettyprinted}</p>
+<h1>install build environment and dependencies</h1>
+<p>$ kernel_release=$( uname -r )
+$ sudo apt-get install linux-headers-${kernel_release} build-essential -y
+$ sudo apt-get install libxml2-dev libxslt1-dev -y</p>
+<h1>Download from github and compile from sources</h1>
+<p>$ git clone --branch lxml-3.2.4 https://github.com/lxml/lxml
+$ python2.7 setup.py clean build --with-cython install
+```</p>
+<p><strong>Sources:</strong>  </p>
+<p>http://stackoverflow.com/questions/16149613/installing-lxml-with-pip-in-virtualenv-ubuntu-12-10-error-command-gcc-failed  </p>
+<p>http://stackoverflow.com/questions/22239816/installing-lxml-in-virtualenv-via-pip-install-error-command-x86-64-linux-gnu-g</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/python-3-on-cloud-9-ide.html" rel="bookmark"
+                           title="Permalink to Python 3 on Cloud 9 IDE">Python 3 on Cloud 9 IDE</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-06-06T10:58:00+02:00">
+                Published: Fri 06 June 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+
+</footer><!-- /.post-info -->                <p>The only official way to do it right now is:</p>
+<p>``` {style="color: #333333;"}
+tmux
+c9pm install python3-3.3.1
+c9pm install gcc-wrapper-4.6.3</p>
+<p>pyvenv-3.3 virtualenv</p>
+<div class="highlight"><pre><span class="err">```</span> <span class="p">{</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;color: #333333;&quot;</span><span class="p">}</span>
+<span class="nt">cd</span> <span class="nt">virtualenv</span> <span class="o">&amp;&amp;</span> <span class="nt">source</span> <span class="o">./</span><span class="nt">bin</span><span class="o">/</span><span class="nt">activate</span>
+</pre></div>
+
+
+<p>``` {style="color: #333333;"}
+curl -O http://python-distribute.org/distribute_setup.py
+python distribute_setup.py</p>
+<div class="highlight"><pre><span class="err">```</span> <span class="p">{</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;color ...</span></pre></div>
+                <a class="readmore" href="/python-3-on-cloud-9-ide.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/mysql-backuprestore-database.html" rel="bookmark"
+                           title="Permalink to MySQL - Backup/Restore database">MySQL - Backup/Restore database</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-04-24T14:08:00+02:00">
+                Published: Thu 24 April 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/backup.html">backup</a> <a href="/tag/database.html">database</a> <a href="/tag/mysql.html">mysql</a> <a href="/tag/restore.html">restore</a> </p>
+</footer><!-- /.post-info -->                <p><code>backup: # mysqldump -u root -p[root_password] [database_name] &gt; dumpfilename.sql restore:# mysql -u root -p[root_password] [database_name] &lt; dumpfilename.sql</code></p>
+                <a class="readmore" href="/mysql-backuprestore-database.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/setting-up-flask-app-on-cloud9.html" rel="bookmark"
+                           title="Permalink to Setting up flask app on Cloud9">Setting up flask app on Cloud9</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-04-09T11:18:00+02:00">
+                Published: Wed 09 April 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/cloud9.html">cloud9</a> <a href="/tag/flask.html">flask</a> <a href="/tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->                <p><code>import os from flask import Flask app = Flask(name) @app.route('/') def hello():  return 'Hello World' app.run(host=os.environ['IP'],port=int(os.environ['PORT']))</code></p>
+                <a class="readmore" href="/setting-up-flask-app-on-cloud9.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/good-logging-practice-in-python.html" rel="bookmark"
+                           title="Permalink to Good logging practice in Python">Good logging practice in Python</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-04-08T14:27:00+02:00">
+                Published: Tue 08 April 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/logging.html">logging</a> <a href="/tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->                <p>http://victorlin.me/posts/2012/08/26/good-logging-practice-in-python</p>
+                <a class="readmore" href="/good-logging-practice-in-python.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/sending-emails-with-attachments-via-gmail-with-python.html" rel="bookmark"
+                           title="Permalink to Sending emails with attachments via Gmail with Python">Sending emails with attachments via Gmail with Python</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-04-08T09:16:00+02:00">
+                Published: Tue 08 April 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/attachment.html">attachment</a> <a href="/tag/email.html">email</a> <a href="/tag/gmail.html">gmail</a> <a href="/tag/python.html">python</a> <a href="/tag/send-email.html">send email</a> </p>
+</footer><!-- /.post-info -->                <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">#!/usr/bin/python</span>
+
+<span class="kn">import</span> <span class="nn">smtplib</span>
+<span class="kn">from</span> <span class="nn">email.MIMEMultipart</span> <span class="kn">import</span> <span class="n">MIMEMultipart</span>
+<span class="kn">from ...</span></pre></div></td></tr></table>
+                <a class="readmore" href="/sending-emails-with-attachments-via-gmail-with-python.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/fcgi-for-python-on-hostgator.html" rel="bookmark"
+                           title="Permalink to FCGI for Python on HostGator">FCGI for Python on HostGator</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-03-28T14:55:00+01:00">
+                Published: Fri 28 March 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/hostgator.html">hostgator</a> <a href="/tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->                <p>http://theonlywinningmove.net/2013/07/29/fcgi-for-python-on-hostgator-spoiler-alert-its-a-bit-annoying-but-at-least-its-there/</p>
+                <a class="readmore" href="/fcgi-for-python-on-hostgator.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/the-importance-of-google-plus-privacy-and-how-to-set-yours.html" rel="bookmark"
+                           title="Permalink to The Importance of Google Plus Privacy, and How to Set Yours">The Importance of Google Plus Privacy, and How to Set Yours</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-03-18T12:46:00+01:00">
+                Published: Tue 18 March 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/g.html">G+</a> <a href="/tag/google.html">Google+</a> <a href="/tag/privacy.html">Privacy</a> <a href="/tag/set-up.html">Set up</a> </p>
+</footer><!-- /.post-info -->                <iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/e-Hp6usW6Z8?rel=0" frameborder="0" allowfullscreen></iframe>
+                <a class="readmore" href="/the-importance-of-google-plus-privacy-and-how-to-set-yours.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/import-python-module-with-explicit-path.html" rel="bookmark"
+                           title="Permalink to Import python module with explicit path">Import python module with explicit path</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-03-14T14:48:00+01:00">
+                Published: Fri 14 March 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/module-import.html">module import</a> <a href="/tag/pip.html">pip</a> <a href="/tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->                <p>Sometimes, when importing a python module into a python script, you get
+error like this one<br />
+<code>File "", line 1, in  ImportError: No module name package_name</code></p>
+<p>Check if that package is installed. If it is installed try using
+something like:<br />
+<code>import sys sys.path.append(r"/path_to_package") import package_name</code></p>
+                <a class="readmore" href="/import-python-module-with-explicit-path.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/access-python-3-on-hostgator-shared-hosting.html" rel="bookmark"
+                           title="Permalink to Access Python 3 on Hostgator shared hosting">Access Python 3 on Hostgator shared hosting</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-03-14T14:41:00+01:00">
+                Published: Fri 14 March 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/hostgator.html">hostgator</a> <a href="/tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->                <p>Path to Python3 on a Hostgator server is<br />
+<code>/usr/bin/python3</code></p>
+                <a class="readmore" href="/access-python-3-on-hostgator-shared-hosting.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/install-pypi-packages-on-hostgator-shared-hosting.html" rel="bookmark"
+                           title="Permalink to Install pypi packages on Hostgator shared hosting">Install pypi packages on Hostgator shared hosting</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-03-14T14:37:00+01:00">
+                Published: Fri 14 March 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/hostgator.html">hostgator</a> <a href="/tag/pip.html">pip</a> <a href="/tag/pypi.html">pypi</a> <a href="/tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->                <p>Use this command</p>
+<p><code>pip install --install-option="--prefix=$HOME/local"</code></p>
+                <a class="readmore" href="/install-pypi-packages-on-hostgator-shared-hosting.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/installing-python-packages-in-nitrous-io.html" rel="bookmark"
+                           title="Permalink to Installing python packages in nitrous.io">Installing python packages in nitrous.io</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-02-28T11:34:00+01:00">
+                Published: Fri 28 February 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/dai.html">dai</a>
+        </address>
+<p>In <a href="/category/tips.html">Tips</a>. </p>
+<p>tags: <a href="/tag/install.html">install</a> <a href="/tag/nitrousio.html">nitrous.io</a> <a href="/tag/pip.html">pip</a> <a href="/tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->                <p><code>pip install --user praw</code></p>
+<p>http://www.pip-installer.org/en/latest/cookbook.html#user-installs</p>
+                <a class="readmore" href="/installing-python-packages-in-nitrous-io.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.twitter.com/die2live">Twitter</a></li>
+                            <li><a href="https://github.com/die2live">GitHub</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
