@@ -5,4 +5,4 @@ Category: Tips
 Tags: hostgator, python
 Slug: fcgi-for-python-on-hostgator
 
-http://theonlywinningmove.net/2013/07/29/fcgi-for-python-on-hostgator-spoiler-alert-its-a-bit-annoying-but-at-least-its-there/
+[http://theonlywinningmove.net/2013/07/29/fcgi-for-python-on-hostgator-spoiler-alert-its-a-bit-annoying-but-at-least-its-there/](http://theonlywinningmove.net/2013/07/29/fcgi-for-python-on-hostgator-spoiler-alert-its-a-bit-annoying-but-at-least-its-there/)
