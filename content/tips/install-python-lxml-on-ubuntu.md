@@ -52,6 +52,6 @@ $ python2.7 setup.py clean build --with-cython install
 
 **Sources:**  
 
-http://stackoverflow.com/questions/16149613/installing-lxml-with-pip-in-virtualenv-ubuntu-12-10-error-command-gcc-failed  
+[http://stackoverflow.com/questions/16149613/installing-lxml-with-pip-in-virtualenv-ubuntu-12-10-error-command-gcc-failed](http://stackoverflow.com/questions/16149613/installing-lxml-with-pip-in-virtualenv-ubuntu-12-10-error-command-gcc-failed )
 
-http://stackoverflow.com/questions/22239816/installing-lxml-in-virtualenv-via-pip-install-error-command-x86-64-linux-gnu-g
+[http://stackoverflow.com/questions/22239816/installing-lxml-in-virtualenv-via-pip-install-error-command-x86-64-linux-gnu-g](http://stackoverflow.com/questions/22239816/installing-lxml-in-virtualenv-via-pip-install-error-command-x86-64-linux-gnu-g)
