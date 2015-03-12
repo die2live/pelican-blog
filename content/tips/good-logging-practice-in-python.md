@@ -5,4 +5,4 @@ Category: Tips
 Tags: logging, python
 Slug: good-logging-practice-in-python
 
-http://victorlin.me/posts/2012/08/26/good-logging-practice-in-python
+[http://victorlin.me/posts/2012/08/26/good-logging-practice-in-python](http://victorlin.me/posts/2012/08/26/good-logging-practice-in-python)
