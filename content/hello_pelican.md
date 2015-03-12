@@ -1,5 +1,5 @@
 Title: Hello Pelican!
-Date: 2015-01-14 17:38
+Date: 2000-01-01 00:00
 Modified: 2015-01-14 17:45
 Category: Python
 Tags: pelican, python, blog-engine
