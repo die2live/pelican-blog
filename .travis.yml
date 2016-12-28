@@ -9,6 +9,8 @@ before_install:
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/id_rsa
 - ssh-add /tmp/id_rsa
+- cat id_rsa >> ~/.ssh/authorized_keys
+- chmod 700 ~/.ssh/authorized_keys
 - ssh dai@128.199.103.86
 install:
 - pip install requests
