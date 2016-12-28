@@ -2,6 +2,14 @@ language: python
 branches:
   only:
   - master
+addons:
+  ssh_known_hosts: 128.199.103.86
+before_install:
+- openssl aes-256-cbc -K $encrypted_0579895ad733_key -iv $encrypted_0579895ad733_iv -in id_rsa.enc -out /tmp/id_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/id_rsa
+- ssh-add /tmp/id_rsa
+- ssh dai@128.199.103.86
 install:
 - pip install requests
 - pip install -r requirements.txt
@@ -10,11 +18,3 @@ before_script:
 script:
 - make publish
 - make ssh_upload
-before_install:
-- openssl aes-256-cbc -K $encrypted_0579895ad733_key -iv $encrypted_0579895ad733_iv -in id_rsa.enc -out id_rsa -d
-- eval "$(ssh-agent -s)"
-- chmod 600 id_rsa
-- ssh-add id_rsa
-- ssh dai@128.199.103.86
-addons:
-  ssh_known_hosts: 128.199.103.86
