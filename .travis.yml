@@ -10,3 +10,5 @@ before_script:
 script:
 - make publish
 - make ssh_upload
+addons:
+  ssh_known_hosts: 128.199.103.86
