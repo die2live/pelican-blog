@@ -10,5 +10,7 @@ before_script:
 script:
 - make publish
 - make ssh_upload
+before_install:
+- openssl aes-256-cbc -K $encrypted_0579895ad733_key -iv $encrypted_0579895ad733_iv -in id_rsa.enc -out ~\/.ssh/id_rsa -d
 addons:
   ssh_known_hosts: 128.199.103.86
