@@ -9,3 +9,4 @@ before_script:
 - pelican-themes -i ./theme/elegant
 script:
 - make publish
+- make ssh_upload
