@@ -15,7 +15,7 @@ FTP_TARGET_DIR=/
 SSH_HOST=128.199.103.86
 SSH_PORT=22
 SSH_USER=dai
-SSH_TARGET_DIR=/var/www/alexandr.dermenji.ru
+SSH_TARGET_DIR=/home/dai/www
 
 S3_BUCKET=my_s3_bucket
 
