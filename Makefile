@@ -12,10 +12,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=localhost
+SSH_HOST=128.199.103.86
 SSH_PORT=22
-SSH_USER=root
-SSH_TARGET_DIR=/var/www
+SSH_USER=dai
+SSH_TARGET_DIR=/var/www/alexandr.dermenji.ru
 
 S3_BUCKET=my_s3_bucket
 
