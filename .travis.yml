@@ -15,5 +15,6 @@ before_install:
 - eval "$(ssh-agent -s)"
 - chmod 600 id_rsa
 - ssh-add id_rsa
+- ssh dai@128.199.103.86
 addons:
   ssh_known_hosts: 128.199.103.86
