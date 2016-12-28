@@ -11,7 +11,7 @@ before_install:
 - ssh-add /tmp/id_rsa
 - cat /tmp/id_rsa >> ~/.ssh/authorized_keys
 - chmod 700 ~/.ssh/authorized_keys
-- ssh dai@128.199.103.86
+- rsync -a dai@128.199.103.86:/home/dai/blog-project/tmp
 install:
 - pip install requests
 - pip install -r requirements.txt
