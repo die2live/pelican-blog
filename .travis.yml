@@ -7,4 +7,4 @@ install:
 before_script:
 - pelican-themes -i ./theme/elegant
 script:
-- make publish github
+- make publish
