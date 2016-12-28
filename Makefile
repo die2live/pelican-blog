@@ -15,7 +15,7 @@ FTP_TARGET_DIR=/
 SSH_HOST=128.199.103.86
 SSH_PORT=22
 SSH_USER=dai
-SSH_TARGET_DIR=/home/dai/www
+SSH_TARGET_DIR=/home/dai/blog-project/www
 
 S3_BUCKET=my_s3_bucket
 
