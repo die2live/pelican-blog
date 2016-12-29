@@ -40,7 +40,4 @@ Slug: sending-emails-with-attachments-via-gmail-with-python
     mailServer.sendmail(gmail_user, to, msg.as_string())
     mailServer.close()
 
-    mail("some.person@some.address.com",
-    "Hello from python!",
-    "This is a email sent with python",
-    "my_picture.jpg")
+    mail("some.person@some.address.com", "Hello from python!", "This is a email sent with python", "my_picture.jpg")
