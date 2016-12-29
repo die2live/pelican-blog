@@ -13,21 +13,23 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_DOMAIN = 'http://alexandr.dermenji.ru'
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+FEED_MAX_ITEMS = 10
+RSS_FEED_SUMMARY_ONLY = True
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Biserica Bunavestirea Chisinau', 'http://bunavestirea.md/'),
+         ('Moldova Crestina', 'https://moldovacrestina.md/'),)
 
 # Social widget
 SOCIAL = (('Twitter', 'https://www.twitter.com/die2live'),
-          ('GitHub',  'https://github.com/die2live'),)
+          ('Facebook',  'https://www.facebook.com/die2live'),)
 
 DEFAULT_PAGINATION = False
 
