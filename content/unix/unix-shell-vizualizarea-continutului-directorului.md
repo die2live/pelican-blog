@@ -1,6 +1,6 @@
 Title: Unix Shell - Vizualizarea conţinutului directorului
 Date: 2014-02-07 15:42
-Author: dai
+Author: Alexandr Dermenji
 Category: Unix
 Slug: unix-shell-vizualizarea-continutului-directorului
 

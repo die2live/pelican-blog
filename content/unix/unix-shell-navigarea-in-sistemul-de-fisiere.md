@@ -1,6 +1,6 @@
 Title: Unix Shell - Navigarea în sistemul de fişiere
 Date: 2014-02-12 13:31
-Author: dai
+Author: Alexandr Dermenji
 Category: Unix
 Slug: unix-shell-navigarea-in-sistemul-de-fisiere
 

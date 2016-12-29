@@ -1,6 +1,6 @@
 Title: Import python module with explicit path
 Date: 2014-03-14 14:48
-Author: dai
+Author: Alexandr Dermenji
 Category: Tips
 Tags: module import, pip, python
 Slug: import-python-module-with-explicit-path

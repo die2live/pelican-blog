@@ -1,6 +1,6 @@
 Title: Unix Shell - Calea către fişier/director
 Date: 2014-02-13 14:10
-Author: dai
+Author: Alexandr Dermenji
 Category: Unix
 Slug: unix-shell-calea-catre-fisierdirector
 

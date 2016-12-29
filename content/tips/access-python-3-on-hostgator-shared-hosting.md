@@ -1,6 +1,6 @@
 Title: Access Python 3 on Hostgator shared hosting
 Date: 2014-03-14 14:41
-Author: dai
+Author: Alexandr Dermenji
 Category: Tips
 Tags: hostgator, python
 Slug: access-python-3-on-hostgator-shared-hosting

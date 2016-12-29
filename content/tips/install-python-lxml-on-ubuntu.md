@@ -1,6 +1,6 @@
 Title: Install python lxml on Ubuntu
 Date: 2014-07-21 09:12
-Author: dai
+Author: Alexandr Dermenji
 Category: Tips
 Tags: install, lxml, python, ubuntu
 Slug: install-python-lxml-on-ubuntu

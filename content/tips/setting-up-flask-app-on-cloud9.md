@@ -1,6 +1,6 @@
 Title: Setting up flask app on Cloud9
 Date: 2014-04-09 11:18
-Author: dai
+Author: Alexandr Dermenji
 Category: Tips
 Tags: cloud9, flask, python
 Slug: setting-up-flask-app-on-cloud9

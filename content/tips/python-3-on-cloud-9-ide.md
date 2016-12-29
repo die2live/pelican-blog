@@ -1,6 +1,6 @@
 Title: Python 3 on Cloud 9 IDE
 Date: 2014-06-06 10:58
-Author: dai
+Author: Alexandr Dermenji
 Category: Tips
 Slug: python-3-on-cloud-9-ide
 

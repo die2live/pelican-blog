@@ -1,6 +1,6 @@
 Title: MySQL - Backup/Restore database
 Date: 2014-04-24 14:08
-Author: dai
+Author: Alexandr Dermenji
 Category: Tips
 Tags: backup, database, mysql, restore
 Slug: mysql-backuprestore-database

@@ -1,6 +1,6 @@
 Title: FCGI for Python on HostGator 
 Date: 2014-03-28 14:55
-Author: dai
+Author: Alexandr Dermenji
 Category: Tips
 Tags: hostgator, python
 Slug: fcgi-for-python-on-hostgator

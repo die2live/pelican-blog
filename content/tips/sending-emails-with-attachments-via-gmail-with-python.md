@@ -1,6 +1,6 @@
 Title: Sending emails with attachments via Gmail with Python
 Date: 2014-04-08 09:16
-Author: dai
+Author: Alexandr Dermenji
 Category: Tips
 Tags: attachment, email, gmail, python, send email
 Slug: sending-emails-with-attachments-via-gmail-with-python

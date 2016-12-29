@@ -1,6 +1,6 @@
 Title: Unix Shell - Crearea directoarelor
 Date: 2014-02-17 14:36
-Author: dai
+Author: Alexandr Dermenji
 Category: Unix
 Slug: unix-shell-crearea-directoarelor
 

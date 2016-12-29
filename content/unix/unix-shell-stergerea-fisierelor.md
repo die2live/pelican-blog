@@ -1,6 +1,6 @@
 Title: Unix Shell - Stergerea fisierelor
 Date: 2014-02-14 00:18
-Author: dai
+Author: Alexandr Dermenji
 Category: Unix
 Slug: unix-shell-stergerea-fisierelor
 
