@@ -25,7 +25,8 @@ RSS_FEED_SUMMARY_ONLY = True
 
 # Blogroll
 LINKS = (('Biserica Bunavestirea Chisinau', 'http://bunavestirea.md/'),
-         ('Moldova Crestina', 'https://moldovacrestina.md/'),)
+         ('Moldova Crestina', 'https://moldovacrestina.md/'),
+         ('DWNLD - Youtube Playlist Downloader', 'http://dwnld.dermenji.ru'),)
 
 # Social widget
 SOCIAL = (('Twitter', 'https://www.twitter.com/die2live'),
