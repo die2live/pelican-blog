@@ -4,8 +4,6 @@ Author: Alexandr Dermenji
 Category: Unix
 Slug: unix-shell-crearea-directoarelor
 
-![](http://wallsaved.com/wp-content/uploads/2014/01/create-a-wallpaper.jpg)
-
 Pentru a crea un director, folositi comanda `mkdir nume_director_nou`.
 Exemplu:  
 
