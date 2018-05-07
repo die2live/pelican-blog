@@ -7,4 +7,4 @@ Slug: hello-pelican
 Authors: Alexandr Dermenji
 Summary: Hello pelican!
 
-Hello world from Pelican!
+Hello world from Pelican!!!
