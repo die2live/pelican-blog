@@ -14,8 +14,8 @@ Detalii cu provire la sărbătoare
 *Locul:* Tree House Camping and Resort
 
 *Cum ajungeți:* 
-* Rutiera 159, de la intersecția str. Vadul-lui-Vodă cu str. Meșterul Manole
-* Autobuzul 31 de pe str. Tighina
-* Rutiera 131 de pe str. Bulgară
+- Rutiera 159, de la intersecția str. Vadul-lui-Vodă cu str. Meșterul Manole
+- Autobuzul 31 de pe str. Tighina
+- Rutiera 131 de pe str. Bulgară
 
 Coborâți la stația Tohatin de Jos, lângă restaurantul Hanul lui Vasile
