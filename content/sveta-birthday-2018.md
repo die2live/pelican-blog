@@ -1,5 +1,6 @@
 Title: Sveta - Ziua de naștere
 Date: 2018-05-01 00:00 
+Status: draft
 Modified: 2018-05-01 00:00
 Category: 
 Python Tags: 
